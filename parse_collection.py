@@ -10,12 +10,22 @@ def extract_track_info(entry) -> Track:
     tempo = entry.find('TEMPO')
     album = entry.find('ALBUM')
 
+    # Create structured location object
+    if location is not None:
+        location_obj = {
+            "directory": location.get('DIR'),
+            "file": location.get('FILE'),
+            "volume": location.get('VOLUME')
+        }
+    else:
+        location_obj = None
+
     return Track(
         track_id=entry.get('AUDIO_ID'),
         name=entry.get('TITLE'),
         artist=entry.get('ARTIST'),
         album=album.get('TITLE') if album is not None else None,
-        location=location.get('FILE') if location is not None else None,
+        location=location_obj,  # Updated location to be an object
         bitrate=int(info.get('BITRATE')) if info is not None and info.get('BITRATE') is not None else None,
         duration=int(info.get('PLAYTIME')) if info is not None and info.get('PLAYTIME') is not None else None,
         bpm=float(tempo.get('BPM')) if tempo is not None and tempo.get('BPM') is not None else None

@@ -1,20 +1,16 @@
-# models.py
-
 from pydantic import BaseModel
-from typing import List, Optional
+from typing import List, Optional, Union  # Added Union for the location field
 
 # Define the Track model
 class Track(BaseModel):
-    track_id: Optional[str] = None
-    name: Optional[str] = None
-    artist: Optional[str] = None
-    album: Optional[str] = None
-    location: Optional[str] = None
-    genre: Optional[str] = None
-    bitrate: Optional[int] = None
-    sample_rate: Optional[int] = None
-    duration: Optional[int] = None
-    bpm: Optional[float] = None
+    track_id: Optional[str]
+    name: Optional[str]
+    artist: Optional[str]
+    album: Optional[str]
+    location: Union[str, dict]  # Allow location to be a string or a dictionary
+    bitrate: Optional[int]
+    duration: Optional[int]
+    bpm: Optional[float]
 
 # Define the Playlist model
 class Playlist(BaseModel):
