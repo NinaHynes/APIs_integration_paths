@@ -1,19 +1,20 @@
 from fastapi import FastAPI, HTTPException
 from models import LibraryData
 from parse_rekordbox import parse_rekordbox_xml
-from parse_collection import parse_collection_nml
-from parse_library import parse_library_xml
+from parse_traktor import parse_collection_nml
+from parse_apple_music import parse_library_xml
 import os
 
-app = FastAPI()
+app = FastAPI(debug=True, reload=True)
+
 
 @app.get("/parse-file", response_model=LibraryData)
 async def parse_file(file_path: str, file_type: str):
     """
-    Parses the file at the given file path based on the file type (rekordbox, collection, library).
+    Parses the file at the given file path based on the file type.
     
     :param file_path: Path to the file on the system.
-    :param file_type: Type of file ('rekordbox', 'collection', 'library').
+    :param file_type: Type of file ('rekordbox', 'traktor', 'apple_music').
     :return: Parsed data as LibraryData.
     """
     # Print the file path to confirm what FastAPI is receiving
@@ -41,22 +42,22 @@ async def parse_file(file_path: str, file_type: str):
             print("Parsing Rekordbox XML file.")
             return parse_rekordbox_xml(file_path)
         
-        elif file_type == "collection":
+        elif file_type == "traktor":
             if not file_path.endswith('.nml'):
-                raise HTTPException(status_code=400, detail="Collection file must be NML.")
+                raise HTTPException(status_code=400, detail="Traktor file must be NML.")
             with open(file_path, 'r') as file:
                 print("Opening Collection NML file.")
                 return parse_collection_nml(file)
 
-        elif file_type == "library":
+        elif file_type == "apple_music":
             if not file_path.endswith('.xml'):
-                raise HTTPException(status_code=400, detail="Library file must be XML.")
+                raise HTTPException(status_code=400, detail="Music app file must be XML.")
             with open(file_path, 'r') as file:
                 print("Opening Library XML file.")
                 return parse_library_xml(file)
         
         else:
-            raise HTTPException(status_code=400, detail="Invalid file type. Choose from 'rekordbox', 'collection', or 'library'.")
+            raise HTTPException(status_code=400, detail="Invalid file type. Choose from 'rekordbox', 'traktor' or 'apple_music'.")
     
     except Exception as e:
         print(f"Error occurred: {e}")

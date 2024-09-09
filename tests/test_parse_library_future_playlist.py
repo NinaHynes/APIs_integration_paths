@@ -1,5 +1,5 @@
 import pytest
-from parse_library import parse_library_xml
+from parse_apple_music import parse_library_xml
 from io import StringIO
 
 # Sample library XML with tracks and playlists that reference track IDs

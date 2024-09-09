@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DJ_PLAYLISTS Version="1.0.0">
+  <PRODUCT Name="rekordbox" Version="6.8.5" Company="AlphaTheta"/>
+  <COLLECTION Entries="9">
+    <TRACK TrackID="47468967" Name="NOISE" Artist="" Composer="" Album=""
+           Grouping="" Genre="" Kind="WAV File" Size="1382226" TotalTime="5"
+           DiscNumber="0" TrackNumber="0" Year="0" AverageBpm="0.00" DateAdded="2024-08-27"
+           BitRate="0" SampleRate="0" Comments="" PlayCount="0" Rating="0"
+           Location="file://localhost/Users/ale/Music/PioneerDJ/Sampler/OSC_SAMPLER(2)/PRESET%20ONESHOT/NOISE.wav"
+           Remixer="" Tonality="" Label="" Mix=""/>
+    <TRACK TrackID="72086393" Name="SINEWAVE" Artist="" Composer="" Album=""
+           Grouping="" Genre="" Kind="WAV File" Size="1515258" TotalTime="5"
+           DiscNumber="0" TrackNumber="0" Year="0" AverageBpm="0.00" DateAdded="2024-08-27"
+           BitRate="0" SampleRate="0" Comments="" PlayCount="0" Rating="0"
+           Location="file://localhost/Users/ale/Music/PioneerDJ/Sampler/OSC_SAMPLER(2)/PRESET%20ONESHOT/SINEWAVE.wav"
+           Remixer="" Tonality="" Label="" Mix=""/>
+    <TRACK TrackID="189038715" Name="SIREN" Artist="" Composer="" Album=""
+           Grouping="" Genre="" Kind="WAV File" Size="1941204" TotalTime="7"
+           DiscNumber="0" TrackNumber="0" Year="0" AverageBpm="0.00" DateAdded="2024-08-27"
+           BitRate="0" SampleRate="0" Comments="" PlayCount="0" Rating="0"
+           Location="file://localhost/Users/ale/Music/PioneerDJ/Sampler/OSC_SAMPLER(2)/PRESET%20ONESHOT/SIREN.wav"
+           Remixer="" Tonality="" Label="" Mix=""/>
+    <TRACK TrackID="210293964" Name="HORN" Artist="" Composer="" Album=""
+           Grouping="" Genre="" Kind="WAV File" Size="2010816" TotalTime="7"
+           DiscNumber="0" TrackNumber="0" Year="0" AverageBpm="0.00" DateAdded="2024-08-27"
+           BitRate="0" SampleRate="0" Comments="" PlayCount="0" Rating="0"
+           Location="file://localhost/Users/ale/Music/PioneerDJ/Sampler/OSC_SAMPLER(2)/PRESET%20ONESHOT/HORN.wav"
+           Remixer="" Tonality="" Label="" Mix=""/>
+    <TRACK TrackID="32706852" Name="Demo Track 1" Artist="Loopmasters" Composer=""
+           Album="" Grouping="" Genre="" Kind="MP3 File" Size="6899624"
+           TotalTime="172" DiscNumber="0" TrackNumber="0" Year="0" AverageBpm="0.00"
+           DateAdded="2024-08-27" BitRate="0" SampleRate="0" Comments="Tracks by www.loopmasters.com"
+           PlayCount="0" Rating="0" Location="file://localhost/Users/ale/Music/PioneerDJ/Demo%20Tracks/Demo%20Track%201.mp3"
+           Remixer="" Tonality="" Label="Loopmasters" Mix=""/>
+    <TRACK TrackID="113785898" Name="Demo Track 2" Artist="Loopmasters"
+           Composer="" Album="" Grouping="" Genre="" Kind="MP3 File" Size="5124342"
+           TotalTime="128" DiscNumber="0" TrackNumber="0" Year="0" AverageBpm="0.00"
+           DateAdded="2024-08-27" BitRate="0" SampleRate="0" Comments="Tracks by www.loopmasters.com"
+           PlayCount="0" Rating="0" Location="file://localhost/Users/ale/Music/PioneerDJ/Demo%20Tracks/Demo%20Track%202.mp3"
+           Remixer="" Tonality="" Label="Loopmasters" Mix=""/>
+    <TRACK TrackID="9379193" Name="01 Right There" Artist="Floorplan" Composer=""
+           Album="Right There / Holy Ghost" Grouping="" Genre="" Kind="MP3 File"
+           Size="7148309" TotalTime="177" DiscNumber="0" TrackNumber="1"
+           Year="0" AverageBpm="124.00" DateAdded="2024-08-27" BitRate="320"
+           SampleRate="44100" Comments="" PlayCount="0" Rating="0" Location="file://localhost/Users/ale/Projects/AIDJ/NewAll/01%20Right%20There.mp3"
+           Remixer="" Tonality="Gm" Label="" Mix="">
+      <TEMPO Inizio="0.077" Bpm="124.00" Metro="4/4" Battito="1"/>
+    </TRACK>
+    <TRACK TrackID="96864606" Name="1st Premonition - DBX Detroit Remix"
+           Artist="Fred Giannelli, DBX" Composer="" Album="1st Premonition"
+           Grouping="" Genre="" Kind="MP3 File" Size="18986887" TotalTime="470"
+           DiscNumber="0" TrackNumber="2" Year="0" AverageBpm="128.56" DateAdded="2024-08-27"
+           BitRate="320" SampleRate="44100" Comments="" PlayCount="0" Rating="0"
+           Location="file://localhost/Users/ale/Projects/AIDJ/NewAll/1st%20Premonition%20-%20DBX%20Detroit%20Remix.mp3"
+           Remixer="" Tonality="Abm" Label="" Mix="">
+      <TEMPO Inizio="0.059" Bpm="128.56" Metro="4/4" Battito="1"/>
+    </TRACK>
+    <TRACK TrackID="97392791" Name="04_PN" Artist="Sigha" Composer="" Album="Techno Derivatives"
+           Grouping="" Genre="" Kind="MP3 File" Size="14081323" TotalTime="348"
+           DiscNumber="0" TrackNumber="2" Year="0" AverageBpm="127.95" DateAdded="2024-08-27"
+           BitRate="320" SampleRate="44100" Comments="" PlayCount="0" Rating="0"
+           Location="file://localhost/Users/ale/Projects/AIDJ/NewAll/04_PN.mp3"
+           Remixer="" Tonality="Abm" Label="" Mix="">
+      <TEMPO Inizio="0.197" Bpm="127.95" Metro="4/4" Battito="1"/>
+    </TRACK>
+  </COLLECTION>
+  <PLAYLISTS>
+    <NODE Type="0" Name="ROOT" Count="3">
+      <NODE Name="Three" Type="1" KeyType="0" Entries="3">
+        <TRACK Key="9379193"/>
+        <TRACK Key="96864606"/>
+        <TRACK Key="97392791"/>
+      </NODE>
+      <NODE Name="Twoo" Type="1" KeyType="0" Entries="2">
+        <TRACK Key="96864606"/>
+        <TRACK Key="97392791"/>
+      </NODE>
+      <NODE Name="One" Type="1" KeyType="0" Entries="0"/>
+    </NODE>
+  </PLAYLISTS>
+</DJ_PLAYLISTS>

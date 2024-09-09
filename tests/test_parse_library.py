@@ -1,5 +1,5 @@
 import pytest
-from parse_library import parse_library_xml
+from parse_apple_music import parse_library_xml
 from io import StringIO
 from models import LibraryData  # Assuming you have a LibraryData model like for COLLECTION
 

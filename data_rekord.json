@@ -1,0 +1,66 @@
+[
+    {
+        "playlist_name": "Three",
+        "tracks": [
+            {
+                "track_id": "9379193",
+                "name": "01 Right There",
+                "artist": "Floorplan",
+                "album": "Right There / Holy Ghost",
+                "location": "file://localhost/Users/ale/Projects/AIDJ/NewAll/01%20Right%20There.mp3",
+                "bitrate": 320,
+                "duration": 177,
+                "bpm": 124.0
+            },
+            {
+                "track_id": "96864606",
+                "name": "1st Premonition - DBX Detroit Remix",
+                "artist": "Fred Giannelli, DBX",
+                "album": "1st Premonition",
+                "location": "file://localhost/Users/ale/Projects/AIDJ/NewAll/1st%20Premonition%20-%20DBX%20Detroit%20Remix.mp3",
+                "bitrate": 320,
+                "duration": 470,
+                "bpm": 128.56
+            },
+            {
+                "track_id": "97392791",
+                "name": "04_PN",
+                "artist": "Sigha",
+                "album": "Techno Derivatives",
+                "location": "file://localhost/Users/ale/Projects/AIDJ/NewAll/04_PN.mp3",
+                "bitrate": 320,
+                "duration": 348,
+                "bpm": 127.95
+            }
+        ]
+    },
+    {
+        "playlist_name": "Twoo",
+        "tracks": [
+            {
+                "track_id": "96864606",
+                "name": "1st Premonition - DBX Detroit Remix",
+                "artist": "Fred Giannelli, DBX",
+                "album": "1st Premonition",
+                "location": "file://localhost/Users/ale/Projects/AIDJ/NewAll/1st%20Premonition%20-%20DBX%20Detroit%20Remix.mp3",
+                "bitrate": 320,
+                "duration": 470,
+                "bpm": 128.56
+            },
+            {
+                "track_id": "97392791",
+                "name": "04_PN",
+                "artist": "Sigha",
+                "album": "Techno Derivatives",
+                "location": "file://localhost/Users/ale/Projects/AIDJ/NewAll/04_PN.mp3",
+                "bitrate": 320,
+                "duration": 348,
+                "bpm": 127.95
+            }
+        ]
+    },
+    {
+        "playlist_name": "One",
+        "tracks": []
+    }
+]
