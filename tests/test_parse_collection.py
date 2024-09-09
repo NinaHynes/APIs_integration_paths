@@ -1,5 +1,5 @@
 import pytest
-from parse_collection import parse_collection_nml
+from parse_traktor import parse_collection_nml
 from io import StringIO
 from models import LibraryData
 

@@ -23,7 +23,7 @@ def parse_rekordbox_xml(file_path: str) -> LibraryData:
                     bitrate=track.get('BitRate'),
                     sample_rate=track.get('SampleRate'),
                     duration=track.get('TotalTime'),
-                    bpm=track.get('AverageBpm')
+                    bpm=float(track.get('AverageBpm'))
                 )
                 track_dict[track_id] = track_info
 
@@ -44,13 +44,17 @@ def parse_rekordbox_xml(file_path: str) -> LibraryData:
                         print(f"Adding track {track_id} to playlist {playlist_name}")
                         playlist_tracks.append(track_dict[track_id])
 
-                if playlist_tracks:
-                    playlists.append(Playlist(
-                        playlist_name=playlist_name,
-                        tracks=playlist_tracks
-                    ))
+                
+                playlists.append(Playlist(
+                    playlist_name=playlist_name,
+                    tracks=playlist_tracks
+                ))
 
         print(f"Tracks: {len(track_dict)}, Playlists: {len(playlists)}")
+        import json
+        with open('data_rekord.json', 'w') as f:
+            json.dump([playlist.dict() for playlist in playlists], f)
+
         return LibraryData(playlists=playlists, tracks=list(track_dict.values()))
 
     except ET.ParseError as parse_error:

@@ -1,0 +1,80 @@
+[
+    {
+        "playlist_name": "_LOOPS",
+        "tracks": []
+    },
+    {
+        "playlist_name": "_RECORDINGS",
+        "tracks": []
+    },
+    {
+        "playlist_name": "One",
+        "tracks": [
+            {
+                "track_id": null,
+                "name": "Volve",
+                "artist": "Gaiser",
+                "album": "Blank Fade (Edited Version)",
+                "location": {
+                    "directory": "/:Users/:ale/:Projects/:AIDJ/:NewAll/:",
+                    "file": "Volve.mp3",
+                    "volume": "Macintosh HD"
+                },
+                "bitrate": 320000,
+                "duration": 296,
+                "bpm": 120.0
+            },
+            {
+                "track_id": null,
+                "name": "Volve",
+                "artist": "Gaiser",
+                "album": "Blank Fade (Edited Version)",
+                "location": {
+                    "directory": "/:Users/:ale/:Projects/:AIDJ/:NewAll/:",
+                    "file": "Volve.mp3",
+                    "volume": "Macintosh HD"
+                },
+                "bitrate": 320000,
+                "duration": 296,
+                "bpm": 120.0
+            },
+            {
+                "track_id": null,
+                "name": "Volve",
+                "artist": "Gaiser",
+                "album": "Blank Fade (Edited Version)",
+                "location": {
+                    "directory": "/:Users/:ale/:Projects/:AIDJ/:NewAll/:",
+                    "file": "Volve.mp3",
+                    "volume": "Macintosh HD"
+                },
+                "bitrate": 320000,
+                "duration": 296,
+                "bpm": 120.0
+            }
+        ]
+    },
+    {
+        "playlist_name": "Three",
+        "tracks": [
+            {
+                "track_id": null,
+                "name": "Volve",
+                "artist": "Gaiser",
+                "album": "Blank Fade (Edited Version)",
+                "location": {
+                    "directory": "/:Users/:ale/:Projects/:AIDJ/:NewAll/:",
+                    "file": "Volve.mp3",
+                    "volume": "Macintosh HD"
+                },
+                "bitrate": 320000,
+                "duration": 296,
+                "bpm": 120.0
+            }
+        ]
+    },
+    {
+        "playlist_name": "Two",
+        "tracks": []
+    }
+]
