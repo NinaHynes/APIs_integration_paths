@@ -1,0 +1,100 @@
+openapi: 3.0.0
+info:
+  title: Music Library Parser API
+  description: This API parses music library files from Rekordbox, Traktor, and Apple Music.
+  version: 1.0.0
+servers:
+  - url: http://localhost:8000
+paths:
+  /parse-file:
+    get:
+      summary: Parse a music library file
+      description: |
+        This endpoint parses a file from one of the supported systems: Rekordbox, Traktor, or Apple Music.
+        You need to provide the file path and the file type.
+      parameters:
+        - in: query
+          name: file_path
+          schema:
+            type: string
+          required: true
+          description: The absolute path to the file on your system.
+          example: "/home/dci-student/Documents/djoid_integrate_APIs/Integrate_APIs_to_kopf/rekordbox/itunes/xml_nml_files/rekordbox-s.xml"
+        - in: query
+          name: file_type
+          schema:
+            type: string
+            enum:
+              - rekordbox
+              - traktor
+              - apple_music
+          required: true
+          description: The type of file to parse.
+          example: "rekordbox"
+      responses:
+        200:
+          description: File parsed successfully and returned as LibraryData.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LibraryData'
+        400:
+          description: Invalid file type or file path.
+        404:
+          description: File not found.
+        500:
+          description: Error occurred while parsing the file.
+
+components:
+  schemas:
+    Track:
+      type: object
+      properties:
+        track_id:
+          type: string
+          description: Unique ID of the track.
+        name:
+          type: string
+          description: Name of the track.
+        artist:
+          type: string
+          description: Artist of the track.
+        album:
+          type: string
+          description: Album the track belongs to.
+        location:
+          type: string
+          description: File path to the track.
+        bitrate:
+          type: integer
+          description: Bitrate of the track.
+        duration:
+          type: integer
+          description: Duration of the track in milliseconds.
+        bpm:
+          type: number
+          description: Beats per minute of the track.
+    Playlist:
+      type: object
+      properties:
+        playlist_name:
+          type: string
+          description: Name of the playlist.
+        tracks:
+          type: array
+          items:
+            $ref: '#/components/schemas/Track'
+          description: List of tracks in the playlist.
+    LibraryData:
+      type: object
+      properties:
+        playlists:
+          type: array
+          items:
+            $ref: '#/components/schemas/Playlist'
+          description: List of playlists in the library.
+        tracks:
+          type: array
+          items:
+            $ref: '#/components/schemas/Track'
+          description: List of tracks in the library.
